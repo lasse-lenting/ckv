@@ -1,0 +1,255 @@
+.pageContainer {
+  overflow: auto;
+}
+.pageContainer.color1 .videoItems .item .image {
+  border-color: #fff714;
+}
+.pageContainer.color1 .videoItems .item .defaultTitle {
+  background: #fff714;
+}
+.pageContainer.color2 .videoItems .item .image {
+  border-color: #364eff;
+}
+.pageContainer.color2 .videoItems .item .defaultTitle {
+  background: #364eff;
+}
+.pageContainer.color3 .videoItems .item .image {
+  border-color: #e07219;
+}
+.pageContainer.color3 .videoItems .item .defaultTitle {
+  background: #e07219;
+}
+.pageContainer.color4 .videoItems .item .image {
+  border-color: #991919;
+}
+.pageContainer.color4 .videoItems .item .defaultTitle {
+  background: #991919;
+}
+.pageContainer.color5 .videoItems .item .image {
+  border-color: #3cf333;
+}
+.pageContainer.color5 .videoItems .item .defaultTitle {
+  background: #3cf333;
+}
+.pageContainer .videoItems {
+  width: 940px;
+  margin: 0 auto;
+  max-width: 100%;
+  margin-bottom: 150px !important;
+}
+.pageContainer .videoItems .item {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 20px;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+.pageContainer .videoItems .item:hover .image {
+  border-color: #fff;
+  opacity: 0.6;
+}
+.pageContainer .videoItems .item:hover .defaultTitle {
+  background: #fff;
+}
+.pageContainer .videoItems .item .image {
+  height: 260px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  border: 2px solid red;
+  opacity: 1;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.pageContainer .videoItems .item .defaultTitle {
+  padding: 30px;
+  background: red;
+  min-height: 138px;
+  color: #000;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.videoOverlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 80;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.videoOverlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+.videoOverlay.active .innerContent {
+  margin-top: 0;
+  opacity: 1;
+  -webkit-transition: all 0.6s ease-out;
+  -moz-transition: all 0.6s ease-out;
+  -o-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
+  -webkit-transition-delay: 0.6s;
+  -moz-transition-delay: 0.6s;
+  -o-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+.videoOverlay .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.8;
+}
+.videoOverlay .innerContent {
+  height: 0;
+  width: calc(100% - 25vw);
+  top: 50%;
+  left: 50%;
+  padding-top: 56.25%;
+  position: relative;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin-top: 50px;
+  opacity: 0;
+  -webkit-transition: all 0.6s ease-out;
+  -moz-transition: all 0.6s ease-out;
+  -o-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.videoOverlay .innerContent .videoContent {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  background: #000;
+  max-height: calc(100vh - 300px);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.videoOverlay .innerContent .videoContent .closeVideo {
+  position: absolute;
+  width: 250px;
+  height: 60px;
+  right: 0;
+  top: -60px;
+  background: #000;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.videoOverlay .innerContent .videoContent .closeVideo:hover {
+  background: #fff !important;
+}
+.videoOverlay .innerContent .videoContent .closeVideo.color1 {
+  background: #fff714;
+}
+.videoOverlay .innerContent .videoContent .closeVideo.color2 {
+  background: #364eff;
+}
+.videoOverlay .innerContent .videoContent .closeVideo.color3 {
+  background: #e07219;
+}
+.videoOverlay .innerContent .videoContent .closeVideo.color4 {
+  background: #991919;
+}
+.videoOverlay .innerContent .videoContent .closeVideo.color5 {
+  background: #3cf333;
+}
+.videoOverlay .innerContent .videoContent .closeVideo .defaultTitle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  text-decoration: underline;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.videoOverlay .innerContent .videoContent .innerVideo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.videoOverlay .innerContent .videoContent iframe {
+  width: 100%;
+  height: 100%;
+}
+@media all and (max-width: 1180px) {
+  .pageContainer .videoItems {
+    left: 0;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 100px;
+    position: static;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -o-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+  .videoOverlay .innerContent {
+    width: calc(100% - 15vw);
+  }
+}
+@media all and (max-width: 768px) {
+  .pageContainer .videoItems {
+    padding: 0;
+  }
+  .videoOverlay .innerContent {
+    padding-top: 0;
+    height: calc(100% - 60px);
+    top: 60px;
+    left: 0;
+    width: 100%;
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  .videoOverlay .innerContent .videoContent {
+    height: 100%;
+    max-height: 100%;
+  }
+  .videoOverlay .innerContent .videoContent .closeVideo {
+    width: 100%;
+  }
+}
+@media all and (max-width: 630px) {
+  .pageContainer .videoItems .item {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=videos.css.map */

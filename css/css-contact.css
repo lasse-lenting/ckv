@@ -1,0 +1,121 @@
+.pageContainer {
+  overflow: auto;
+}
+.pageContainer .contactItems {
+  position: absolute;
+  width: 940px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin-bottom: 150px !important;
+}
+.pageContainer .contactItems .intro {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.pageContainer .contactItems .item {
+  display: inline-block;
+  width: 25%;
+  padding: 0 20px;
+  text-align: left;
+  text-decoration: none;
+  color: #fff;
+  vertical-align: top;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.pageContainer .contactItems .item .image {
+  height: 60px;
+  width: 100%;
+  position: relative;
+  display: block;
+}
+.pageContainer .contactItems .item .image img {
+  position: absolute;
+  max-width: 100%;
+  max-height: 100%;
+  top: 50%;
+  left: 0;
+  display: block;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.pageContainer .contactItems .item .contactTitle {
+  display: block;
+  margin-top: 20px;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 26px;
+}
+.pageContainer .contactItems .item a {
+  color: #fff;
+  text-decoration: none;
+  opacity: 1;
+  font-weight: 600;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.pageContainer .contactItems .item a:hover {
+  opacity: 0.6;
+}
+@media all and (max-height: 730px) {
+  .pageContainer .contactItems {
+    position: relative;
+    margin-top: 50px;
+    top: 0;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+@media all and (max-width: 1180px) {
+  .pageContainer .contactItems {
+    left: 0;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 100px;
+    position: static;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -o-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}
+@media all and (max-width: 1024px) {
+  .pageContainer .contactItems .item {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+}
+@media all and (max-width: 768px) {
+  .pageContainer .contactItems {
+    padding: 0;
+  }
+}
+@media all and (max-width: 400px) {
+  .pageContainer .contactItems .item {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+/*# sourceMappingURL=contact.css.map */

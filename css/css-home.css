@@ -1,0 +1,79 @@
+.pageContainer {
+  position: fixed;
+}
+.pageContainer .backgroundVideoContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.pageContainer .backgroundVideoContainer:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.8;
+}
+.pageContainer .backgroundVideoContainer #backgroundVideo {
+  position: absolute;
+  width: 110%;
+  top: -5%;
+  left: -5%;
+  height: 110%;
+  object-fit: cover;
+  /*            filter:blur(50px);*/
+}
+.pageContainer .logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  height: 15.5vh;
+  width: 100%;
+  text-align: center;
+  pointer-events: none;
+}
+.pageContainer .logo img {
+  height: 100%;
+  width: auto;
+}
+.pageContainer .mainVideoContainer {
+  width: 50vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: calc(100% - 80px);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.pageContainer .mainVideoContainer:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+.pageContainer .mainVideoContainer #mainVideo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media all and (max-width: 768px) {
+  .pageContainer .logo {
+    height: auto;
+  }
+  .pageContainer .logo img {
+    height: auto;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=home.css.map */
