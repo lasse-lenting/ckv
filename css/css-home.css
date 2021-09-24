@@ -45,10 +45,11 @@
   width: auto;
 }
 .pageContainer .mainVideoContainer {
-  width: 50vh;
+  width: 500px;
   position: absolute;
   top: 50%;
   left: 50%;
+  height: 900px;
   max-width: calc(100% - 80px);
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
